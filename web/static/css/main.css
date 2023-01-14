@@ -14,33 +14,40 @@ h1, b, h2, h3, h4, h5 {
 }
 
 img {
-    max-width: 300px;
+    /* max-width: 400px;
     max-height: 400px;
     min-width: 300px;
-    min-height: 400px;
+    min-height: 400px; */
+    max-height: 300px;
+    width: 400px;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
 .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     align-content: center;
     height: 350px;
-    width: 20%;
-    padding: 50px;
+    width: 40%;
+    padding: 10px;
     padding-top: 150px;
     font-size: 14px;
+    max-width: 1000px;
 }
 
 .parent {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    flex-wrap:wrap;
     flex-direction: row;
     align-content: flex-start;
     margin: 0 auto;
+    max-width: 600px;
+    width: 80%;
+
 }
