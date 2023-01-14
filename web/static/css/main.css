@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'sheesh';
+    src: url("./helvetica_bold_oblique.ttf");
+}
+body {
+    background-color: black;
+}
+
+h1, b, h2, h3, h4, h5 {
+    font-family: 'sheesh';
+    text-align: center;
+    color: white;
+}
+
+img {
+    max-width: 300px;
+    max-height: 400px;
+    min-width: 300px;
+    min-height: 400px;
+    object-fit: contain;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 350px;
+    width: 20%;
+    padding: 50px;
+    padding-top: 150px;
+    font-size: 14px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    margin: 0 auto;
+}

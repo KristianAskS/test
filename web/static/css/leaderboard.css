@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: 'sheesh';
+    src: url("./helvetica_bold_oblique.ttf");
+}
+body {
+    background-color: black;
+}
+
+h1, b, h2, h3, h4 {
+    font-family: 'sheesh';
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    padding-top: 10px;
+    
+}
+
+img {
+    max-width: 150px;
+    max-height: 250px;
+    min-width: 150px;
+    min-height: 250px;
+    object-fit: cover ;
+    padding: 30px;
+    align-self: center;
+}
+
+.info {
+    height: 200px;
+    width: 200px;
+    padding-top: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:flex-start;
+    height: 350px;
+    width: 20%;
+    padding-top: 150px;
+    font-size: 14px;
+    padding: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 0 auto;
+    align-items: center;
+}

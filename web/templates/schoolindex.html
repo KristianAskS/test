@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css"> 
+    <title>Home Page</title>
+</head>
+<div>
+    <h1><b>{{e1.school}}</b> </h1>
+    <h2>Click on one of the two</h2>
+    {% if e1 and e2 %}
+    <div class="parent">
+    <div class="container">
+    <a href={{url_for('school_index', winner_id=e1.name, loser_id=e2.name, w_side='left', school_name=school_name)}}>
+        <img src={{e1.img_url}} alt={{e1.name}}>
+    </a>
+        <div>
+            <h2>{{e1.name}}</h2>
+            {% if e1.role %}
+            <h3>{{e1.role}}</h3>
+            {% endif %}
+            {% if e1.predicted_age %}
+            <h5>predicted age: {{e1.predicted_age}}</h5>
+            {% endif %}
+        </div>
+
+    </div>
+    <div class="container">
+    <a href={{url_for('school_index', winner_id=e2.name, loser_id=e1.name, w_side='right', school_name=school_name)}}>
+        <img src={{e2.img_url}} alt={{e2.name}}>
+    </a>
+        <div>
+            <h2>{{e2.name}}</h2>
+            {% if e2.role %}
+            <h3>{{e2.role}}</h3>
+            {% endif %}
+            {% if e2.predicted_age %}
+            <h5>predicted age: {{e2.predicted_age}}</h5>
+            {% endif %}
+        </div>
+
+</div></div>
+    {% endif %}
+    <a href={{url_for('school_leaderboard', school_name=school_name)}}>
+    <h3 style="padding-top: 100px;">Leaderboard</h3></a>
+    <a href={{url_for("index")}}>
+        <h3>Go back</h3>
+    </a>
+</body>
+</html>
